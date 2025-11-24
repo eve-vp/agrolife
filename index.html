@@ -1,53 +1,222 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agrolife SRL</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="img/Logo BLFinal Agrolife.png">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Agrolife SRL</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" href="img/Logo BLFinal Agrolife.png">
 </head>
+
 <body>
 
-    <header class="header">
-        <img src="img/Logo BLFinal Agrolife.png" alt="Agrolife Logo" class="logo">
-        <h1 class="slogan">LÍDERES EN ACONDICIONAMIENTOS DE CARGAS Y ENVASES AGROINDUSTRIALES</h1>
-    </header>
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <img class="logo" src="img/Logo-2022PNG.png" alt="Agrolife logo">
 
-    <section class="about section">
-        <h2>Quiénes Somos</h2>
-        <p>
-            Somos una empresa paraguaya dedicada a la importación y distribución de envases agrícolas y 
-            acondicionamiento de cargas, destinados principalmente al segmento agro-industrial. 
-            Estos envases son proveídos por empresas extranjeras con quienes hemos creado lazos comerciales 
-            sólidos y a largo plazo.
-        </p>
-    </section>
+      <!-- Desktop -->
+      <ul class="nav-links desktop-menu">
+        <li><a href="#about">Quiénes Somos</a></li>
+        <li><a href="#solutions">Soluciones</a></li>
+        <li><a href="#brands">Distribuidores</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
 
-    <section class="distributors section">
-        <h2>Distribuidor Oficial de</h2>
-        <ul>
-            <li>CMPC</li>
-            <li>EPG</li>
-            <li>EMBAQUIM</li>
-            <li>INCOPLAST</li>
-            <li>TAMBORES DEL COMAHUE</li>
-        </ul>
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger-btn">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-        <a href="docs/Agrolife-Catalogo.pdf" download class="btn-download">Descargar Productos</a>
-    </section>
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#about">Quiénes</a>
+    <a href="#solutions">Soluciones</a>
+    <a href="#brands">Distribuidores</a>
+    <a href="#contact">Contacto</a>
+  </div>
 
-    <section class="contact section">
+  <!-- Backdrop -->
+  <div class="menu-backdrop" id="menu-backdrop"></div>
+
+
+  <!-- HERO -->
+  <header class="hero" data-parallax>
+    <div class="hero-inner">
+      <h1 class="hero-title">
+        LÍDERES EN ACONDICIONAMIENTOS<br>DE CARGAS Y ENVASES AGROINDUSTRIALES
+      </h1>
+      <p class="hero-sub">Soluciones premium para protección logística y agroindustrial.</p>
+    </div>
+  </header>
+
+
+  <!-- QUIÉNES SOMOS -->
+  <section id="about" class="section block block-light section--reveal">
+    <div class="container">
+      <h2>Quiénes Somos</h2>
+      <p>
+        Somos una empresa paraguaya dedicada a la importación y distribución de envases agrícolas y 
+        acondicionamiento de cargas para el sector agro-industrial.
+        Representamos marcas internacionales con alianzas sólidas y a largo plazo.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- SOLUCIONES -->
+  <section id="solutions" class="section block block-dark section--reveal">
+    <div class="container">
+      <h2>Soluciones</h2>
+      
+      <!-- Botón de descarga de PDF añadido aquí -->
+     
+      <div class="solutions-grid">
+        <div class="solution-card">
+          <div class="solution-icon">
+            <i class="fas fa-boxes"></i>
+          </div>
+          <h3>ACONDICIONADORES DE CARGAS</h3>
+          <p>Soluciones flexibles para transporte y almacenamiento a granel.</p>
+        </div>
+        <div class="solution-card">
+          <div class="solution-icon">
+            <i class="fas fa-tint-slash"></i>
+          </div>
+          <h3>SOLUCIONES DE CARGAS</h3>
+          <p>Protección contra humedad y condensación dentro del contenedor.</p>
+        </div>
+        <div class="solution-card">
+          <div class="solution-icon">
+            <i class="fas fa-film"></i>
+          </div>
+          <h3>FILM VACÍO</h3>
+          <p>Embalaje seguro y limpio para pallets industriales.</p>
+        </div>
+      </div>
+      
+      <div class="pdf-download-container">
+        <a class="btn pdf-download" href="docs/Agrolife-Catalogo.pdf" download>
+          <span>📥</span> Descargar Catálogo PDF
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- MARCAS -->
+  <section id="brands" class="section block block-elegant section--reveal">
+    <div class="container">
+      <h2 class="brands-title">Distribuidores Oficiales</h2>
+      <p class="brands-subtitle">De las marcas más reconocidas del sector</p>
+
+      <div class="brands-grid">
+        <div class="brand-card">
+          <div class="brand-logo-placeholder">
+            <i class="fas fa-industry"></i>
+          </div>
+          <h3>CMPC</h3>
+          <p>Líder en soluciones de packaging sustentable</p>
+        </div>
+        <div class="brand-card">
+          <div class="brand-logo-placeholder">
+            <i class="fas fa-box-open"></i>
+          </div>
+          <h3>EPG</h3>
+          <p>Especialistas en protección de cargas internacionales</p>
+        </div>
+        <div class="brand-card">
+          <div class="brand-logo-placeholder">
+            <i class="fas fa-flask"></i>
+          </div>
+          <h3>EMBAQUIM</h3>
+          <p>Innovación para productos químicos especializados</p>
+        </div>
+        <div class="brand-card">
+          <div class="brand-logo-placeholder">
+            <i class="fas fa-recycle"></i>
+          </div>
+          <h3>INCOPLAST</h3>
+          <p>Soluciones plásticas de alta durabilidad</p>
+        </div>
+        <div class="brand-card">
+          <div class="brand-logo-placeholder">
+            <i class="fas fa-drum"></i>
+          </div>
+          <h3>TAMBORES DEL COMAHUE</h3>
+          <p>Envases industriales de máxima calidad</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CONTACTO -->
+  <section id="contact" class="section block block-light section--reveal">
+    <div class="container contact-grid">
+
+      <div>
         <h2>Contacto</h2>
         <p>Acosta Ñu 911 e. Corrales, Paraguay</p>
         <p>Email: <a href="mailto:hola@agrolife.com.py">hola@agrolife.com.py</a></p>
-        <p>Tel: +595 981 701 178</p>
-    </section>
+        <p>Tel: +595 123 456 789</p>
+        
+        <!-- Redes Sociales -->
+        <div class="social-links">
+          <a href="https://www.linkedin.com/company/agrolife-srl" target="_blank" class="social-link">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com/agrolifesrlpy/" target="_blank" class="social-link">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
 
-    <footer class="footer">
-        <p>© 2025 Agrolife SRL. Todos los derechos reservados.</p>
-    </footer>
+      <form class="contact-form" action="#" onsubmit="return false;">
+        <label>
+          <span>Nombre</span>
+          <input type="text" name="name">
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email">
+        </label>
+        <label>
+          <span>Mensaje</span>
+          <textarea name="message" rows="4"></textarea>
+        </label>
 
-    <script src="script.js"></script>
+        <div class="form-actions">
+          <button class="btn">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-text">
+          © 2025 Agrolife SRL — Todos los derechos reservados.
+        </div>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/company/agrolife-srl" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com/agrolifesrlpy/" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
